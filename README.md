@@ -45,9 +45,25 @@ With SR
  ./deploy.sh -s transcode-service,ingest-server,delivery-server,collector-service,sr-service -b
 ```
 
-4. Then, run the player-client:
+4. To start a live stream, configure the client to stream for:
+
+Without SR:
+``` bash
+rtmp://$SERVER-IP:1936/live/$key
+```
+
+With SR:
+``` bash
+rtmp://$SERVER-IP:1936/live2/$key
+```
+
+Where $SERVER-IP is the IP of Ingest Server and $key is a custem key defined in the transmission.
+
+As a client rtmp you can use the OBS-studio tool or some other application.
+
+5. Then, run the player-client:
 ``` bash
 ./deploy.sh -s player-client -b
 ```
 
-5. The logs will be write in dir share/results-collector
+6. The logs will be write in dir share/results-collector
