@@ -26,31 +26,30 @@ volumes:
 In the "config.yml" file, you can define the settings to this module.
 
 ```bash
-ingest_server:
-  server: 'rtmp://192.168.100.20' # ip ingest server
-  port: "1936" # port rtmp ingest server
-  channel: "live" 
-  key: "veneza"
-
-delivery_server:
-  server: 'rtmp://192.168.100.20' # ip delivery server
-  port: "1935"  # rtmp port delivery server
-  channel: "dash" 
-  key: "veneza" 
-
-channel_to_ingest:
-  mm_delay: "40"
-  downlink: "/traces/12Mbps" #You can choose another trace available in the tracer folder
-  uplink: "/traces/12Mbps"   # You can choose another trace available in the tracer folder
-
 enviroment:
-  timeout: "None" # None to no timeout or time in second
+  is_sr: False
   log_level: "debug" # info or debug
-  codec: "h264" # h264 or nvenc
+  key: "football"
 
-dash_representation:
-  representation: ['360p','540p','720p'] # See delivery server conf
-  dash_variant: ['_low','_med','_high'] # That's is a suffix to the representation, see delivery server conf 
+sr_service:
+  ingest_server:
+    server: 'rtmp://192.168.100.20' # ip ingest server
+    port: "1936" # port rtmp ingest server
+    channel: "live2"
+
+  transcode_service: #change to transcode
+    server: 'rtmp://192.168.100.20' # ip transcode
+    port: "1937"  # rtmp port transcode
+    channel: "transcode4"
+
+  channel_to_ingest:
+    mm_delay: "40"
+    #downlink: "/traces/cooked_group1/7/B_2019.12.17_07.32.39.csv" #You can choose another trace available in the tracer folder 
+    downlink: "/traces/cooked_group1/10/B_2019.11.28_14.53.29.csv" #You can choose another trace available in the tracer folder 
+    uplink: "/traces/12Mbps"   # You can choose another trace available in the tracer folder
+     
+  enviroment:
+    timeout: "None" # None to no timeout or time in second
 ```
 
 # Building and Running the transcode service
