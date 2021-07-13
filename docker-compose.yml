@@ -1,0 +1,78 @@
+version: "3.9"
+
+services:
+  ingest-server:
+    build: ${INGEST_SERVER_PATH}
+    container_name: ingest-server
+    restart: always
+    ports:
+      - "${INGEST_SERVER_RTMP_PORT}:1936"
+      - "${INGEST_SERVER_HTTP_PORT}:8181"
+    volumes:
+      - ${INGEST_SERVER_PATH}/nginx_log:/usr/local/nginx/logs
+
+  transcode-service:
+    build: ${TRANSCODER_SERVER_PATH}
+    container_name: transcode-service
+    restart: always
+    ports:
+      - "${TRANSCODE_SERVICE_RTMP_PORT}:1937"
+      - "${TRANSCODE_SERVICE_HTTP_PORT}:8282"
+    volumes:
+      - ${TRANSCODER_SERVER_PATH}/nginx_log:/usr/local/nginx/logs
+
+  delivery-server:
+    build: ${DELIVERY_SERVER_PATH}
+    container_name: delivery-server
+    restart: always
+    volumes:
+      - ${DELIVERY_SERVER_PUBLIC_PATH}:/usr/local/nginx/html
+      - ${DELIVERY_SERVER_PATH}/nginx_log:/usr/local/nginx/logs
+      - ${DELIVERY_SERVER_PATH}/conf:/usr/local/nginx/conf
+      - ${DELIVERY_SERVER_PATH}/tmp:/tmp
+    ports:
+      - "${DELIVERY_SERVER_RTMP_PORT}:1935"
+      - "${DELIVERY_SERVER_HTTP_PORT}:8080"
+
+  sr-service:
+    build: ${SR_SERVICE_PATH}
+    container_name: sr-service
+    volumes:
+      - ${SR_SERVICE_PATH}/src:/scripts
+      - ${TRACE_PATH}:/traces
+      - ${CONFIG_PATH}:/scripts/config
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - capabilities: [gpu]
+    command: su client -c "./wait-for-it.sh --timeout=10 ${INGEST_IP}:${INGEST_SERVER_RTMP_PORT} && ./wait-for-it.sh --timeout=10 ${DELIVERY_IP}:${DELIVERY_SERVER_RTMP_PORT} && python3 ./run_sr.py"
+
+  collector-service:
+    build:  ${COLLECTOR_SERVER_PATH}
+    command: ["python", "/usr/src/api/server.py"]
+    container_name: collector-service
+    restart: always
+    ports:
+      - "${COLLECTOR_SERVER_HTTP_PORT}:8333"
+    expose:
+      - "${COLLECTOR_SERVER_HTTP_PORT}"
+    volumes:
+      - ${COLLECTOR_SERVER_PATH}:/usr/src/api/
+      - ${COLLECTOR_RESULTS_PATH}:/usr/src/api/results-collector
+
+  player-client:
+    build: ${PLAYER_CLIENT_PATH}
+    container_name: player-client
+    volumes:
+      - ${PLAYER_CLIENT_PATH}/src:/scripts
+      - ${TRACE_PATH}:/traces
+      - ${CONFIG_PATH}:/scripts/config
+      - ${BROWSER_DIR_PATH}:/browser
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    command: su client -c "./wait-for --timeout=5 ${DELIVERY_IP}:${DELIVERY_SERVER_RTMP_PORT} && python3 ./run_all_traces.py"

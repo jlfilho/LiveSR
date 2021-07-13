@@ -1,0 +1,9 @@
+#!/bin/bash
+
+. script/github-common
+
+# Publish image
+for IMAGE_OR_ALIAS_TAG in "$IMAGE_TAG" "${ALIAS_TAGS[@]}"
+do
+  docker push "$IMAGE_OR_ALIAS_TAG"
+done

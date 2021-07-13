@@ -1,0 +1,4 @@
+192.168.100.20 [13/Jul/2021:05:18:03 +0000] PUBLISH "live" "football" "" - 19098017 529 "" "FMLE/3.0 (compatible; FMSc/1.0)" (1m 29s)
+172.19.0.1 [13/Jul/2021:07:53:05 +0000] PLAY "live2" "football" "" - 391 1040690 "" "LNX 9,0,124,2" (18s)
+192.168.100.20 [13/Jul/2021:07:53:58 +0000] PUBLISH "live2" "football" "" - 12626332 529 "" "FMLE/3.0 (compatible; FMSc/1.0)" (59s)
+192.168.100.20 [13/Jul/2021:15:24:02 +0000] PUBLISH "live" "football" "" - 8722087 409 "" "FMLE/3.0 (compatible; FMSc/1.0)" (41s)

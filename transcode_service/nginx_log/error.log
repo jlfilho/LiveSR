@@ -1,0 +1,147 @@
+2021/04/08 06:47:34 [error] 8#0: *5 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 06:50:54 [error] 9#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 06:58:58 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 07:01:03 [error] 9#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 07:09:22 [error] 8#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 07:10:23 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 07:15:19 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 07:15:47 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/08 07:18:22 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 03:44:23 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:09:04 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:18:20 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:19:21 [error] 7#0: *3 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:19:59 [error] 7#0: *4 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:21:25 [error] 7#0: *7 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:22:45 [error] 7#0: *10 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 04:24:58 [error] 7#0: *13 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:30:43 [error] 7#0: *5 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:34:59 [error] 7#0: *4 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:36:25 [error] 7#0: *4 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:38:05 [error] 7#0: *8 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:38:05 [error] 7#0: *9 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:38:14 [error] 7#0: *11 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:38:14 [error] 7#0: *12 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:38:33 [error] 7#0: *5 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:42:15 [error] 7#0: *8 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 06:56:34 [error] 8#0: *5 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/09 07:04:53 [error] 7#0: *4 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:33:04 [error] 8#0: *4 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:43:21 [error] 7#0: *5 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:44:16 [error] 7#0: *7 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:44:16 [error] 7#0: *8 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:44:25 [error] 7#0: *11 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:44:25 [error] 7#0: *10 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:44:55 [error] 7#0: *14 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:45:47 [error] 8#0: *17 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:49:40 [error] 7#0: *5 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 05:50:38 [error] 7#0: *4 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/10 06:01:43 [error] 7#0: *3 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:18:59 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:18:59 [error] 7#0: *7 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:19:08 [error] 7#0: *9 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:19:08 [error] 7#0: *8 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:19:11 [error] 7#0: *11 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:19:11 [error] 7#0: *10 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:26:26 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:26:26 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:26:32 [error] 7#0: *7 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:26:32 [error] 8#0: *8 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:26:36 [error] 7#0: *10 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:26:36 [error] 7#0: *9 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:27:03 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:40:03 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:40:28 [error] 7#0: *8 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:40:28 [error] 7#0: *9 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:40:34 [error] 7#0: *10 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:40:34 [error] 7#0: *11 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:40:37 [error] 7#0: *13 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:53:30 [error] 7#0: *14 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:53:30 [error] 7#0: *15 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:53:34 [error] 8#0: *16 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:53:34 [error] 7#0: *17 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:53:42 [error] 7#0: *19 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:53:42 [error] 7#0: *18 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 06:54:12 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 07:13:10 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 07:13:32 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 07:13:36 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 07:14:35 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 07:17:00 [error] 8#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/10 07:22:12 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 05:26:45 [error] 7#0: *8 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/11 05:28:32 [error] 7#0: *12 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/11 05:28:41 [error] 7#0: *14 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/11 06:32:18 [error] 7#0: *12 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 06:32:21 [error] 7#0: *13 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 06:32:30 [error] 7#0: *14 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 06:37:14 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 06:37:20 [error] 7#0: *7 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 07:22:31 [error] 7#0: *6 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 07:22:44 [error] 7#0: *7 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 07:25:37 [error] 7#0: *8 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 07:38:31 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 07:41:49 [error] 8#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:02:44 [error] 8#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:03:51 [error] 8#0: *7 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:04:10 [error] 8#0: *8 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:05:51 [error] 8#0: *9 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:07:51 [error] 8#0: *10 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:08:46 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:08:58 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:09:04 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:09:10 [error] 7#0: *7 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:11:14 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:12:39 [error] 8#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:18:55 [error] 7#0: *14 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:21:07 [error] 7#0: *15 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:23:13 [error] 8#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:26:51 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:26:57 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:28:57 [error] 8#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:29:03 [error] 8#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:31:41 [error] 7#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:31:45 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:32:58 [error] 8#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:33:05 [error] 8#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:36:00 [error] 8#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:39:23 [error] 8#0: *4 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:39:37 [error] 8#0: *5 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 08:49:25 [error] 8#0: *8 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:49:29 [error] 8#0: *9 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:49:40 [error] 8#0: *10 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:49:46 [error] 8#0: *11 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 08:50:10 [error] 8#0: *12 live: already publishing, client: 192.168.100.20, server: 0.0.0.0:1936
+2021/04/11 08:54:50 [error] 7#0: *5 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 08:54:57 [error] 7#0: *6 live: already publishing, client: 100.64.0.2, server: 0.0.0.0:1936
+2021/04/11 16:50:34 [error] 8#0: *12 live: already publishing, client: 172.23.0.1, server: 0.0.0.0:1936
+2021/04/15 04:59:34 [error] 7#0: *11 live: already publishing, client: 172.18.0.1, server: 0.0.0.0:1936
+2021/06/18 23:07:55 [alert] 7#0: unknown process 19 exited on signal 9
+2021/06/18 23:43:15 [alert] 7#0: unknown process 19 exited on signal 9
+2021/06/18 23:51:02 [alert] 7#0: unknown process 19 exited on signal 9
+2021/06/18 23:56:03 [alert] 7#0: unknown process 225 exited on signal 9
+2021/06/18 23:56:18 [alert] 7#0: unknown process 431 exited on signal 9
+2021/06/18 23:56:52 [alert] 7#0: unknown process 432 exited on signal 9
+2021/06/18 23:57:39 [alert] 7#0: unknown process 638 exited on signal 9
+2021/06/18 23:58:05 [alert] 7#0: unknown process 844 exited on signal 9
+2021/06/18 23:58:38 [alert] 7#0: unknown process 1050 exited on signal 9
+2021/06/19 00:02:50 [alert] 7#0: unknown process 1256 exited on signal 9
+2021/06/19 00:10:45 [error] 8#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.100.20, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.100.20:8181", referrer: "http://192.168.100.20:8181/stat"
+2021/06/19 00:21:29 [alert] 8#0: unknown process 20 exited on signal 9
+2021/06/22 07:21:58 [alert] 8#0: unknown process 183 exited on signal 9
+2021/06/24 00:47:03 [error] 7#0: *4 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.100.20, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.100.20:8181", referrer: "http://192.168.100.20:8181/stat"
+2021/07/02 23:00:21 [alert] 7#0: unknown process 19 exited on signal 9
+2021/07/05 02:37:18 [error] 7#0: *11 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.100.20, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.100.20:8181", referrer: "http://192.168.100.20:8181/stat"
+2021/07/06 07:49:29 [error] 8#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.100.20, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.100.20:8181", referrer: "http://192.168.100.20:8181/stat"
+2021/07/13 04:46:14 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:14 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:15 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:16 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:17 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:19 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:22 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:29 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 04:46:42 [emerg] 1#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:21
+2021/07/13 05:18:03 [alert] 7#0: unknown process 19 exited on signal 9
+2021/07/13 07:53:05 [alert] 7#0: unknown process 19 exited on signal 9
+2021/07/13 15:24:02 [alert] 7#0: unknown process 19 exited on signal 9

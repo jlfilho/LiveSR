@@ -1,0 +1,97 @@
+worker_processes  auto;
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    sendfile        on;    
+    keepalive_timeout  65;
+
+    server {
+        listen 8080;
+        server_name localhost;
+        
+        client_max_body_size 128M;
+
+        add_header Access-Control-Allow-Origin * always;
+        add_header Cache-Control no-cache always;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        # Return an empty response, used by dash.js to sync with server time
+        location /time {
+            return 200;
+        }
+
+        # DASH files
+        location /dash {
+            root /tmp;
+        }
+
+        # HLS files
+        location /hls {
+            root /tmp;
+        }
+    }
+}
+
+rtmp {
+    server {
+        listen 1935;
+        chunk_size 4096;
+
+        publish_time_fix off;
+        
+        application sr {
+            live on;
+            interleave on;
+            wait_key on;
+            wait_video on;
+
+        }
+
+        application dash {
+            live on;
+            record off;
+            allow publish all; # your sender ip here
+            #allow publish 127.0.0.1;
+            #deny publish all;
+
+            # Copy incoming streams to the HLS application
+            # exec ffmpeg -re -i rtmp://192.168.100.20:1935/$app/$name -c:v copy -c:a copy -f flv rtmp://192.168.100.20:1935/hls/${name};
+
+            dash on;
+            dash_nested on;
+            dash_path /tmp/dash;
+            dash_fragment 2;
+            dash_playlist_length 120;
+            dash_cleanup on;
+
+            dash_clock_compensation http_head;
+            dash_clock_helper_uri http://192.168.100.20:8080/time;
+
+            dash_variant _low  bandwidth="700000"  width="640"  height="360";
+            dash_variant _med  bandwidth="1600000"  width="960"  height="540";
+            dash_variant _high  bandwidth="2800000"  width="1280"  height="720";
+            dash_variant _uhigh  bandwidth="4300000" width="1920"  height="1080" max;
+        }
+
+
+        application hls {
+            live on;
+            hls on;
+            hls_path /tmp/hls;
+            hls_nested on;
+            hls_fragment 2s;
+
+            hls_variant _low   BANDWIDTH=700000;
+            hls_variant _med   BANDWIDTH=1600000;
+            hls_variant _high BANDWIDTH=2800000;
+            hls_variant _uhigh BANDWIDTH=4300000;
+        }
+    }
+}

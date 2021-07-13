@@ -1,0 +1,8 @@
+#!/bin/bash
+#shellcheck disable=SC2002
+
+. script/github-common
+
+# Enable Docker's experimental features
+cat .docker/daemon.json | sudo tee /etc/docker/daemon.json
+sudo service docker restart

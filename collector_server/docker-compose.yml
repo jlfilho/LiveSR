@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  collector:
+    build: .
+    command: ["python","server.py"]
+    restart: always
+    ports:
+      - "9191:8333"
+    expose:
+      - "9191"
+    container_name: collector
+    volumes:
+      - ./:/usr/src/api   
+      - ../share/results-collector:/usr/src/api/results-collector
+    

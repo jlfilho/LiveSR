@@ -1,0 +1,8 @@
+Flask==1.1.2
+Flask-RESTful==0.3.8
+Flask-Mail==0.9.1
+Flask-Security==3.0.0
+httplib2==0.19.0
+python-json-logger==2.0.1
+requests==2.25.1
+flask-cors

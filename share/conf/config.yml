@@ -1,0 +1,37 @@
+enviroment:
+  is_sr: False
+  log_level: "debug" # info or debug
+  key: "football"
+
+sr_service:
+  ingest_server:
+    server: 'rtmp://192.168.100.20' # ip ingest server
+    port: "1936" # port rtmp ingest server
+    channel: "live2"
+
+  transcode_service: #change to transcode
+    server: 'rtmp://192.168.100.20' # ip transcode
+    port: "1937"  # rtmp port transcode
+    channel: "transcode4"
+
+  channel_to_ingest:
+    mm_delay: "40"
+    #downlink: "/traces/cooked_group1/7/B_2019.12.17_07.32.39.csv" #You can choose another trace available in the tracer folder 
+    downlink: "/traces/cooked_group1/10/B_2019.11.28_14.53.29.csv" #You can choose another trace available in the tracer folder 
+    uplink: "/traces/12Mbps"   # You can choose another trace available in the tracer folder
+     
+  enviroment:
+    timeout: "None" # None to no timeout or time in second
+
+player_client:
+  session:
+    url: 'http://192.168.100.20:8080' 
+    run_time: 405
+    default_chrome_user_dir: '/browser/chrome_data_dir'
+    chrome_driver: '/browser/chromedriver_linux64/chromedriver'
+    visible_virtual_display: False # Only set True if you run outside a container
+    abr_algo: ['abrBola','abrL2A','abrLoLP']  
+  channel_to_delivery:
+    mm_delay: "40"
+    traces_downlink: "/traces/cooked_group1/1/" #You can choose another trace available in the tracer folder 
+    uplink: "/traces/12Mbps"    

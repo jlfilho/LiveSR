@@ -1,0 +1,5 @@
+PyYAML
+numpy
+selenium
+pyvirtualdisplay
+# apt install xvfb xserver-xephyr tigervnc-standalone-server xfonts-base
