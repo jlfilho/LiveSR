@@ -25,13 +25,13 @@ sr_service:
 
 player_client:
   session:
-    url: 'http://192.168.100.20:8080' 
-    run_time: 405
-    default_chrome_user_dir: '/browser/chrome_data_dir'
-    chrome_driver: '/browser/chromedriver_linux64/chromedriver'
+    url: 'http://192.168.100.20:8080' # ip and http port of delivery server
+    run_time: 405 # runtime of session
+    default_chrome_user_dir: '/browser/chrome_data_dir' # path to default chrome user dir 
+    chrome_driver: '/browser/chromedriver_linux64/chromedriver' # path to chrome drive used by Selenium 
     visible_virtual_display: False # Only set True if you run outside a container
-    abr_algo: ['abrBola','abrL2A','abrLoLP']  
+    abr_algo: ['abrBola','abrL2A','abrLoLP'] # List of abr algorithm 
   channel_to_delivery:
-    mm_delay: "40"
+    mm_delay: "40" # network delay
     traces_downlink: "/traces/cooked_group1/1/" #You can choose another trace available in the tracer folder 
-    uplink: "/traces/12Mbps"    
+    uplink: "/traces/12Mbps" # trace upload link     

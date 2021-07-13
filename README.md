@@ -67,3 +67,13 @@ As a client rtmp you can use the OBS-studio tool or some other application.
 ```
 
 6. The logs will be write in dir share/results-collector
+
+# Configuration to run on distributed computers
+
+The following figures illustrate an example using 3 computers to distribute modules over a network.
+
+The blue connections between the modules are connections that use the actual link capacity, while the red connections, specifically in the Player Client and SR-Service modules, are connections with bandwidth and delay control by the Mahimahi emulator.
+
+![alt text](share/assets/cenario1-2.png)
+
+![](share/assets/cenario1-2.png)
